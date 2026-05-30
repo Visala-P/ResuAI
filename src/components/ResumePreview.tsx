@@ -178,7 +178,8 @@ export default function ResumePreview({ resumeData }: ResumePreviewProps) {
       {/* Interactive Control Header */}
       <div className="px-6 py-4.5 border-b border-slate-200 bg-white flex items-center justify-between shrink-0 shadow-sm relative z-10">
         <div>
-          <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">Preview</h2>
+          <h2 className="text-xs font-bold uppercase tracking-widest text-slate-400">Live Document Preview</h2>
+          <span className="text-[11px] font-sans font-medium text-slate-400 mt-0.5 block">Updates instantly as you edit</span>
         </div>
         
         <div className="flex items-center gap-3">
@@ -824,6 +825,10 @@ export default function ResumePreview({ resumeData }: ResumePreviewProps) {
               )}
             </div>
 
+            {/* Resume Footer: Clean, standardized indicator */}
+            <div className="text-center text-[9px] text-slate-400 font-mono border-t pt-4 tracking-normal select-none relative z-10 page-break-avoid">
+              DraftCraft AI-Generated Document • Certified ATS & Schema-Compliant Portfolio
+            </div>
           </div>
         </div>
       </div>
