@@ -40,7 +40,7 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col h-screen w-screen bg-slate-50 overflow-hidden font-sans">
+    <div className="flex flex-col h-screen w-screen bg-slate-50 font-sans">
       {/* SaaS Dashboard Top Bar */}
       <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-8 z-10 shrink-0 select-none">
         <div className="flex items-center gap-3">
@@ -74,7 +74,7 @@ export default function App() {
         </div>
 
         {/* Live stage preview: rest of space, customizable zoom */}
-        <div className="flex-1 h-3/5 lg:h-full overflow-hidden bg-slate-100 flex flex-col">
+        <div className="flex-1 h-3/5 lg:h-full overflow-visible bg-slate-100 flex flex-col">
           <ResumePreview resumeData={resumeData} />
         </div>
       </div>
