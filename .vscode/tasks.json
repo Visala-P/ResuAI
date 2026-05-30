@@ -1,0 +1,65 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "npm install deps",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"install"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "npm build app",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "npm remove tailwind-vite",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"uninstall",
+				"@tailwindcss/vite"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "npm install tailwind3",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"install",
+				"-D",
+				"tailwindcss@3.4.17"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "run dev server",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"dev"
+			],
+			"isBackground": true
+		},
+		{
+			"label": "build project",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false
+		}
+	]
+}
